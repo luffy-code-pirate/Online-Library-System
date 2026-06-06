@@ -1,0 +1,99 @@
+/* ─── GLOBAL STYLES ─────────────────────────────────────────────────────────
+   CSS custom properties (variables) keep the color palette consistent.
+   All components rely on these variables for theming.
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ── Color & Design Tokens ── */
+:root {
+  --bg:        #0d0f14;
+  --surface:   #161a24;
+  --surface2:  #1e2433;
+  --border:    #2a3145;
+  --accent:    #e8b84b;
+  --accent2:   #5c7cfa;
+  --text:      #e8e8f0;
+  --text-muted:#8892aa;
+  --danger:    #e05c5c;
+  --success:   #4cbb8c;
+  --radius:    12px;
+  --radius-sm: 8px;
+  --shadow:    0 4px 24px rgba(0,0,0,0.4);
+  --transition: 0.22s ease;
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.25;
+}
+
+a { text-decoration: none; color: inherit; }
+
+img { display: block; max-width: 100%; }
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  outline: none;
+}
+
+/* ── Utility Classes ── */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #0d0f14;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: var(--radius-sm);
+  transition: opacity var(--transition), transform var(--transition);
+  display: inline-block;
+}
+.btn-primary:hover { opacity: 0.88; transform: translateY(-1px); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
+  font-weight: 500;
+  padding: 9px 22px;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition), color var(--transition);
+  display: inline-block;
+}
+.btn-outline:hover { background: var(--accent); color: #0d0f14; }
+
+/* ── Star Rating ── */
+.stars { color: var(--accent); letter-spacing: 2px; }
+
+/* ── Page Fade-in Animation ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.45s ease both; }
