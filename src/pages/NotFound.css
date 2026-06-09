@@ -1,0 +1,55 @@
+/* ─── 404 NOT FOUND STYLES ───────────────────────────────────────────────── */
+
+/* Full screen centered — no navbar */
+.notfound {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 24px;
+  background: var(--bg);
+}
+
+/* Giant 404 */
+.notfound__code {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(6rem, 20vw, 10rem);
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.notfound__title {
+  font-size: 1.8rem;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+/* Invalid URL display */
+.notfound__url {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.notfound__url code {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-family: monospace;
+  color: var(--danger);
+  font-size: 0.92rem;
+}
+
+.notfound__sub {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 32px;
+}
+
+.notfound__home {
+  font-size: 1rem;
+  padding: 12px 28px;
+}
