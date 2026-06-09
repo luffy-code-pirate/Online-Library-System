@@ -149,4 +149,10 @@ export const initialBooks = [
 ];
 
 // All available book categories
-export const categories = ["Fiction", "Non-Fiction", "Sci-Fi", "Fantasy", "Mystery"];
+export const categories = [
+  "Fiction",
+  "Non-Fiction",
+  "Sci-Fi",
+  "Fantasy",
+  "Mystery",
+];
