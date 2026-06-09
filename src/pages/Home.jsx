@@ -37,7 +37,7 @@ function Home() {
       {/* ── Hero / Welcome Section ── */}
       <section className="hero fade-up">
         <div className="container hero__inner">
-          <p className="hero__eyebrow">Welcome to LibraryOS</p>
+          <p className="hero__eyebrow">Welcome to My Library</p>
           <h1 className="hero__title">
             Your Digital <span className="hero__highlight">Library</span>
           </h1>

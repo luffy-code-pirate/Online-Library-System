@@ -13,7 +13,7 @@ function Navbar() {
 
         {/* Brand / Logo */}
         <NavLink to="/" className="navbar__brand">
-          📚 <span>LibraryOS</span>
+          📚 <span>My Library</span>
         </NavLink>
 
         {/* Navigation Links */}

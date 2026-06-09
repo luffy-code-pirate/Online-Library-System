@@ -8,19 +8,19 @@
 
 /* ── Color & Design Tokens ── */
 :root {
-  --bg:        #0d0f14;
-  --surface:   #161a24;
-  --surface2:  #1e2433;
-  --border:    #2a3145;
-  --accent:    #e8b84b;
-  --accent2:   #5c7cfa;
-  --text:      #e8e8f0;
-  --text-muted:#8892aa;
-  --danger:    #e05c5c;
-  --success:   #4cbb8c;
+  --bg:        #f5f6fa;
+  --surface:   #ffffff;
+  --surface2:  #f0f2f7;
+  --border:    #e2e6ed;
+  --accent:    #c9a227;
+  --accent2:   #3d5af1;
+  --text:      #1a1d23;
+  --text-muted:#6b7280;
+  --danger:    #dc2626;
+  --success:   #16a34a;
   --radius:    12px;
   --radius-sm: 8px;
-  --shadow:    0 4px 24px rgba(0,0,0,0.4);
+  --shadow:    0 4px 16px rgba(0,0,0,0.08);
   --transition: 0.22s ease;
 }
 
